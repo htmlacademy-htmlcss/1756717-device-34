@@ -597,11 +597,19 @@ img {
   background-color: #444444;
 }
 
-.top-footer {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  margin-bottom: 62px;
+.footer-columns {
+  display: grid;
+  grid-template-columns: 240px 1fr 240px;
+}
+
+.footer-column:nth-child(2) {
+  display: grid;
+  justify-items: center;
+}
+
+.footer-column:last-child {
+  display: grid;
+  justify-items: end;
 }
 
 .footer-address {
@@ -617,6 +625,7 @@ img {
   flex-wrap: wrap;
   max-width: 460px;
   margin: 0;
+  margin-bottom: 62px;
   padding: 0;
   list-style-type: none;
 }
@@ -640,23 +649,18 @@ img {
 }
 
 .footer-phone {
+  display: block;
+  margin-bottom: 62px;
   max-width: 175px;
   font-size: 16px;
   line-height: 20px;
   color: #ffffff;
 }
 
-.bottom-footer {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: flex-end;
-}
-
 .social-list {
   display: flex;
   flex-wrap: wrap;
   margin: 0;
-  margin-right: 365px;
   padding: 0;
   list-style-type: none;
 }
