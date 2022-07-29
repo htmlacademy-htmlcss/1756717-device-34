@@ -10,7 +10,7 @@
   <body class="page-body">
     <header class="page-header">
       <div class="container header-container">
-        <a class="logo logo-header">
+        <a class="logo logo-header" href="index.html">
           <svg class="logo-img" role="img" aria-label="Логотип Device" width="145" height="37" viewBox="0 0 145 37"
             fill="none" xmlns="http://www.w3.org/2000/svg">
             <path class="logo-img-path"
@@ -20,19 +20,34 @@
         </a>
         <div class="top-menu">
           <form class="search-form" method="post" action="https://echo.htmlacademy.ru/">
-            <label class="visually-hidden" for="search-form-input">Поле поиска</label>
-            <input class="search-form-input" id="search-form-input" type="text" placeholder="Текст поиска" required>
+            <div class="search-form-input-wrapper">
+              <label class="visually-hidden" for="search-form-input">Поле поиска</label>
+              <input class="search-form-input" id="search-form-input" type="text" placeholder="Текст поиска" required>
+              <svg class="search-form-img" width="16" height="17" viewbox="0 0 16 17" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <g clip-path="url(#a)">
+                  <path
+                    d="m15.7 14.69-3.1-3.1c.9-1.2 1.4-2.6 1.4-4.2 0-3.9-3.1-7-7-7s-7 3.1-7 7 3.1 7 7 7c1.6 0 3-.5 4.2-1.4l3.1 3.1c.2.2.4.3.7.3.6 0 1-.4 1-1 0-.2-.1-.5-.3-.7ZM2 7.39c0-2.8 2.2-5 5-5s5 2.2 5 5-2.2 5-5 5-5-2.2-5-5Z"
+                    fill="#000" />
+                </g>
+                <defs>
+                  <clippath id="a">
+                    <path fill="#fff" transform="translate(0 .39)" d="M0 0h16v16H0z" />
+                  </clippath>
+                </defs>
+              </svg>
+            </div>
             <button class="search-form-button" type="submit">Найти</button>
           </form>
           <ul class="user-menu">
             <li class="user-menu-item">
-              <a class="user-menu-link" href="#">Войти</a>
-            </li>
-            <li class="user-menu-item user-menu-item-compare">
-              <a class="user-menu-link" href="#">Сравнить</a>
+              <a class="user-menu-link user-menu-link-enter" href="#">Войти</a>
             </li>
             <li class="user-menu-item">
-              <a class="user-menu-link" href="#">
+              <a class="user-menu-link user-menu-link-compare" href="#">Сравнить</a>
+            </li>
+            <li class="user-menu-item">
+              <a class="user-menu-link user-menu-link-cart" href="#">
                 <span class="favorite-count">2</span>
                 <span class="cart">Корзина</span>
               </a>
@@ -40,7 +55,7 @@
           </ul>
         </div>
         <div class="bottom-menu">
-          <a class="main-menu-link" href="#">Каталог товаров</a>
+          <button class="main-menu-button" href="#">Каталог товаров</button>
           <ul class="catalog-list">
             <li class="catalog-item">
               <ul class="catalog-inner-list">
@@ -187,7 +202,7 @@
               <a class="category-link category-link-virtual" href="#">Виртуальная реальность</a>
             </li>
             <li class="category-item">
-              <a class="category-link category-link-selfi" href="#">Моноподы для&nbsp;селфи</a>
+              <a class="category-link category-link-selfi" href="catalog.html">Моноподы для&nbsp;селфи</a>
             </li>
             <li class="category-item">
               <a class="category-link category-link-camera" href="#">Экшн-камеры</a>
@@ -293,7 +308,7 @@
     </main>
     <footer class="main-footer">
       <div class="container">
-        <a class="logo logo-footer">
+        <a class="logo logo-footer" href="index.html">
           <svg class="logo-img" role="img" aria-label="Логотип Device" width="145" height="37" viewBox="0 0 145 37"
             fill="none" xmlns="http://www.w3.org/2000/svg">
             <path class="logo-img-path"
