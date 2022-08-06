@@ -54,10 +54,43 @@
                 <span class="favorite-count">2</span>
                 <span class="cart">Корзина</span>
               </a>
+              <!--Для открытия поповера добавить класс popover-cart-open-->
+              <div class="popover-cart">
+                <ul class="cart-list">
+                  <li class="cart-item">
+                    <a class="cart-link" href="#">
+                      <img class="cart-item-img" src="images/product-1.jpg" width="39" height="43" alt="">
+                      <p class="cart-item-name cart-text">Любительская селфи-палка</p>
+                    </a>
+                    <button class="delete-cart-item-button" type="button">
+                      <span class="visually-hidden">Удалить товар из корзины</span>
+                    </button>
+                  </li>
+                  <li class="cart-item">
+                    <a class="cart-link" href="#">
+                      <img class="cart-item-img" src="images/product-2.jpg" width="39" height="43" alt="">
+                      <p class="cart-item-name cart-text">Профессиональная селфи-палка</p>
+                    </a>
+                    <button class="delete-cart-item-button" type="button">
+                      <span class="visually-hidden">Удалить товар из корзины</span>
+                    </button>
+                  </li>
+                </ul>
+                <div class="cart-info">
+                  <div class="cart-info-content">
+                    <p class="cart-info-text cart-text">Товаров: 2</p>
+                    <p class="cart-info-text cart-text">Сумма: 2000 ₽</p>
+                  </div>
+                </div>
+                <div class="cart-open-button-wrapper">
+                  <a class="button cart-open-button" href="#" aria-disabled="false">Открыть корзину</a>
+                </div>
+              </div>
             </li>
           </ul>
         </div>
         <div class="bottom-menu bottom-menu-catalog">
+          <!--Для открытия внутреннего меню добавить класс main-menu-button-active-->
           <button class="main-menu-button">
             <span>Каталог товаров</span>
             <span class="main-menu-button-decor"></span>
@@ -135,11 +168,11 @@
                 <legend class="catalog-filter-legend">Стоимость</legend>
                 <div class="range">
                   <div class="range-scale">
-                    <div class="range-bar">
-                      <button class="range-toggle toggle-min">
+                    <div class="range-bar" style="left: 0; width: 119px">
+                      <button class="range-toggle toggle-min" type="button">
                         <span class="visually-hidden">Изменить минимальную цену.</span>
                       </button>
-                      <button class="range-toggle toggle-max">
+                      <button class="range-toggle toggle-max" type="button">
                         <span class="visually-hidden">Изменить максимальную цену.</span>
                       </button>
                     </div>
@@ -197,7 +230,7 @@
                 <ul class="catalog-filter-list">
                   <li class="catalog-filter-item">
                     <label class="control">
-                      <input class="control-input visually-hidden" type="radio" name="bluetooth" value="yes">
+                      <input class="control-input visually-hidden" type="radio" name="bluetooth" value="yes" checked>
                       <span class="control-mark"></span>
                       <span class="control-label">Есть</span>
                     </label>

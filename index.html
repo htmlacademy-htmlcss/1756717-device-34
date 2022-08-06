@@ -38,10 +38,43 @@
                 <span class="favorite-count">2</span>
                 <span class="cart">Корзина</span>
               </a>
+              <!--Для открытия поповера добавить класс popover-cart-open-->
+              <div class="popover-cart">
+                <ul class="cart-list">
+                  <li class="cart-item">
+                    <a class="cart-link" href="#">
+                      <img class="cart-item-img" src="images/product-1.jpg" width="39" height="43" alt="">
+                      <p class="cart-item-name cart-text">Любительская селфи-палка</p>
+                    </a>
+                    <button class="delete-cart-item-button" type="button">
+                      <span class="visually-hidden">Удалить товар из корзины</span>
+                    </button>
+                  </li>
+                  <li class="cart-item">
+                    <a class="cart-link" href="#">
+                      <img class="cart-item-img" src="images/product-2.jpg" width="39" height="43" alt="">
+                      <p class="cart-item-name cart-text">Профессиональная селфи-палка</p>
+                    </a>
+                    <button class="delete-cart-item-button" type="button">
+                      <span class="visually-hidden">Удалить товар из корзины</span>
+                    </button>
+                  </li>
+                </ul>
+                <div class="cart-info">
+                  <div class="cart-info-content">
+                    <p class="cart-info-text cart-text">Товаров: 2</p>
+                    <p class="cart-info-text cart-text">Сумма: 2000 ₽</p>
+                  </div>
+                </div>
+                <div class="cart-open-button-wrapper">
+                  <a class="button cart-open-button" href="#" aria-disabled="false">Открыть корзину</a>
+                </div>
+              </div>
             </li>
           </ul>
         </div>
         <div class="bottom-menu">
+          <!--Для открытия внутреннего меню добавить класс main-menu-button-active-->
           <button class="main-menu-button">
             <span>Каталог товаров</span>
             <span class="main-menu-button-decor"></span>
@@ -288,6 +321,7 @@
           <div class="mailing-form-wrapper">
             <form class="mailing-form" method="post" action="https://echo.htmlacademy.ru/">
               <label class="visually-hidden" for="mailing-form-input">Введите email</label>
+              <!--Для отображения стилизации ошибки добавить класс mailing-form-input-error-->
               <input class="mailing-form-input" id="mailing-form-input" type="text" placeholder="Ваш e-mail" required>
               <button class="button mailing-button" type="submit">Подписаться</button>
             </form>
@@ -379,6 +413,62 @@
         </div>
       </div>
     </footer>
+    <!--Для открытия модального окна удалить класс modal-container-close-->
+    <div class="modal-container modal-container-close">
+      <div class="modal modal-delivery">
+        <button class="modal-close-button" type="button">
+          <span class="visually-hidden">Закрыть</span>
+        </button>
+        <section class="modal-content">
+          <h2 class="modal-title">Доставка под заказ</h2>
+          <form class="modal-delivery-form" action="https://echo.htmlacademy.ru/" method="post">
+            <div class="modal-field-group-top">
+              <div class="modal-field-group">
+                <label class="modal-text" for="name">Ваше имя:</label>
+                <!--Для отображения ошибки добавить класс error-->
+                <input class="modal-input modal-input-name" type="text" name="name" placeholder="Введите имя" id="name" required>
+                <!--Для отображения сообщения добавить класс modal-message-shown-->
+                <p class="modal-message">Добавьте имя</p>
+              </div>
+              <div class="modal-field-group">
+                <label class="modal-text" for="email">Ваш e-mail:</label>
+                <input class="modal-input modal-input-email" type="text" name="email" placeholder="Введите почту" id="email" required>
+                <!--Для отображения ошибки добавить классы modal-error и modal-message-shown-->
+                <p class="modal-message">Забавный у вас адрес</p>
+              </div>
+            </div>
+            <div class="modal-field-group-bottom">
+              <div class="modal-field-group">
+                <label class="modal-text" for="message">Что нужно привезти:</label>
+                <input class="modal-input" type="text" name="message" placeholder="В свободной форме" id="message" required>
+              </div>
+              <div class="modal-field-group">
+                <span class="modal-text modal-tooltip-wrapper">
+                  <label class="modal-text" for="amount">Количество:</label>
+                  <span class="tooltip">
+                    <button class="tooltip-toggle" type="button" aria-labelledby="tooltip-label">
+                      <span class="visually-hidden">Открыть подсказку</span>
+                    </button>
+                    <span class="tooltip-text" role="tooltip" id="tooltip-label">Постараемся найти, сколько нужно.
+                      Привезём сколько получится по требованиям к&nbsp;провозу багажа.</span>
+                  </span>
+                </span>
+                <div class="modal-field-group amount-group">
+                  <input class="modal-input modal-input-amount" type="text" name="amount" placeholder="1" id="amount">
+                  <button class="modal-amount-button amount-button-minus" type="button">
+                    <span class="visually-hidden">Уменьшить количество на один</span>
+                  </button>
+                  <button class="modal-amount-button amount-button-plus" type="button">
+                    <span class="visually-hidden">Увеличить количество на один</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <button class="button modal-submit-button" type="submit">Отправить</button>
+          </form>
+        </section>
+      </div>
+    </div>
   </body>
 
 </html>
