@@ -38,11 +38,47 @@
                 <span class="favorite-count">2</span>
                 <span class="cart">Корзина</span>
               </a>
+              <!--Для открытия поповера добавить класс popover-cart-open-->
+              <div class="popover-cart">
+                <ul class="cart-list">
+                  <li class="cart-item">
+                    <a class="cart-link" href="#">
+                      <img class="cart-item-img" src="images/product-1.jpg" width="39" height="43" alt="">
+                      <p class="cart-item-name cart-text">Любительская селфи-палка</p>
+                    </a>
+                    <button class="delete-cart-item-button" type="button">
+                      <span class="visually-hidden">Удалить товар из корзины</span>
+                    </button>
+                  </li>
+                  <li class="cart-item">
+                    <a class="cart-link" href="#">
+                      <img class="cart-item-img" src="images/product-2.jpg" width="39" height="43" alt="">
+                      <p class="cart-item-name cart-text">Профессиональная селфи-палка</p>
+                    </a>
+                    <button class="delete-cart-item-button" type="button">
+                      <span class="visually-hidden">Удалить товар из корзины</span>
+                    </button>
+                  </li>
+                </ul>
+                <div class="cart-info">
+                  <div class="cart-info-content">
+                    <p class="cart-info-text cart-text">Товаров: 2</p>
+                    <p class="cart-info-text cart-text">Сумма: 2000 ₽</p>
+                  </div>
+                </div>
+                <div class="cart-open-button-wrapper">
+                  <a class="button cart-open-button" href="#" aria-disabled="false">Открыть корзину</a>
+                </div>
+              </div>
             </li>
           </ul>
         </div>
         <div class="bottom-menu">
-          <button class="main-menu-button" href="#">Каталог товаров</button>
+          <!--Для открытия внутреннего меню добавить класс main-menu-button-active-->
+          <button class="main-menu-button">
+            <span>Каталог товаров</span>
+            <span class="main-menu-button-decor"></span>
+          </button>
           <ul class="catalog-list">
             <li class="catalog-item">
               <ul class="catalog-inner-list">
@@ -92,16 +128,16 @@
     <main class="page-main main-container">
       <h1 class="visually-hidden">Интернет-магазин Device</h1>
       <section class="slider">
-        <div class="container">
+        <div class="container slider-container">
           <h2 class="visually-hidden">Слайдер</h2>
           <ul class="slider-list">
             <li class="slider-item slider-item-1 slider-shown">
-              <img src="images/slider-1.png" width="560" height="560" alt="Квадрокоптер с лазером.">
+              <img class="slider-img" src="images/slider-1.png" width="560" height="560" alt="Квадрокоптер с лазером.">
               <div class="slider-wrapper">
-                <h3 class="slider-item-title title">Порхает как бабочка, жалит как пчела!</h3>
+                <h3 class="slider-item-title title slider-order">Порхает как бабочка, жалит как пчела!</h3>
                 <p class="slider-item-text">Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером,
                   замаскированным под стандартную камеру.</p>
-                <a class="button slider-item-button " href="#">Подробнее</a>
+                <a class="button slider-item-button" href="#" aria-disabled="false">Подробнее</a>
                 <dl class="slider-table">
                   <div class="slider-table-wrapper">
                     <dt>Дальность полета</dt>
@@ -115,13 +151,13 @@
               </div>
             </li>
             <li class="slider-item slider-item-2">
-              <img src="images/slider-2.png" width="560" height="560" alt="Черный фитнес-браслет.">
+              <img class="slider-img" src="images/slider-2.png" width="560" height="560" alt="Черный фитнес-браслет.">
               <div class="slider-wrapper">
-                <h3 class="slider-item-title title">Худеем<br>правильно!</h3>
+                <h3 class="slider-item-title title slider-order">Худеем<br>правильно!</h3>
                 <p class="slider-item-text">Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия
                   и
                   соблюдать диету.</p>
-                <a class="button slider-item-button" href="#">Подробнее</a>
+                <a class="button slider-item-button" href="#" aria-disabled="false">Подробнее</a>
                 <dl class="slider-table">
                   <div class="slider-table-wrapper">
                     <dt>Без подзарядки</dt>
@@ -131,12 +167,12 @@
               </div>
             </li>
             <li class="slider-item slider-item-3">
-              <img src="images/slider-3.png" width="560" height="560" alt="Три селфи-палки.">
+              <img class="slider-img" src="images/slider-3.png" width="560" height="560" alt="Три селфи-палки.">
               <div class="slider-wrapper">
-                <h3 class="slider-item-title title">Делай селфи,<br>как Бен Стиллер! </h3>
+                <h3 class="slider-item-title title slider-order">Делай селфи,<br>как Бен Стиллер! </h3>
                 <p class="slider-item-text">Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь,
                   Карл!) метров длиной и весом всего 5 кг.</p>
-                <a class="button slider-item-button" href="#">Подробнее</a>
+                <a class="button slider-item-button" href="#" aria-disabled="false">Подробнее</a>
                 <dl class="slider-table">
                   <div class="slider-table-wrapper">
                     <dt>Длина палки</dt>
@@ -259,7 +295,7 @@
             <li class="companies-item">СДИК</li>
             <li class="companies-item">ТоксБерри</li>
           </ul>
-          <a class="button about-button" href="#">Подробнее о нас</a>
+          <a class="button about-button" href="#" aria-disabled="false">Подробнее о нас</a>
         </section>
         <section class="contacts">
           <h2 class="contacts-title title">Контакты</h2>
@@ -271,7 +307,7 @@
           <h3 class="contacts-subtitle">Время работы</h3>
           <p class="contacts-time">пн—пт: с 10:00 до 22:00</p>
           <p class="contacts-time contacts-text">сб—вс: с 10:00 до 19:00</p>
-          <a class="button contacts-button" href="#">Напишите нам</a>
+          <a class="button contacts-button" href="#" aria-disabled="false">Напишите нам</a>
         </section>
       </div>
       <section class="mailing">
@@ -285,6 +321,7 @@
           <div class="mailing-form-wrapper">
             <form class="mailing-form" method="post" action="https://echo.htmlacademy.ru/">
               <label class="visually-hidden" for="mailing-form-input">Введите email</label>
+              <!--Для отображения стилизации ошибки добавить класс mailing-form-input-error-->
               <input class="mailing-form-input" id="mailing-form-input" type="text" placeholder="Ваш e-mail" required>
               <button class="button mailing-button" type="submit">Подписаться</button>
             </form>
@@ -351,7 +388,8 @@
               </li>
               <li class="social-item">
                 <a class="social-link" href="https://twitter.com/htmlacademy_ru">
-                  <svg width="15" height="15" viewbox="0 0 15 15" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                  <svg width="15" height="15" viewbox="0 0 15 15" fill="currentColor"
+                    xmlns="http://www.w3.org/2000/svg">
                     <path
                       d="M9.7.16c1.5-.5 2.6.3 3.2 1.1.5-.2 1.1-.4 1.7-.6 0 .8-.5 1.4-.8 1.6.7.2 1.2-.4 1.2-.4-.1.9-.9 1.7-1.4 1.9-.2 6.3-2.8 10.4-8.9 10.3h-.4c-.3 0-3.7-.4-4.3-1.8 2 .2 3.4-.4 4.1-1.1-.8-.3-2.4-.4-2.6-2.8.3.2.5.3 1.1.2-1.1-.8-2.3-1.5-2.2-3.5.3.3.9.5 1.2.4C1 5.26-.2 2.36.8.86c1.6 1.7 3.3 3.4 6.3 3.5.2-2.1 1-3.5 2.6-4.2Z"
                       fill="" />
@@ -375,6 +413,65 @@
         </div>
       </div>
     </footer>
+    <!--Для открытия модального окна удалить класс modal-container-close-->
+    <div class="modal-container modal-container-close">
+      <div class="modal modal-delivery">
+        <button class="modal-close-button" type="button">
+          <span class="visually-hidden">Закрыть</span>
+        </button>
+        <section class="modal-content">
+          <h2 class="modal-title">Доставка под заказ</h2>
+          <form class="modal-delivery-form" action="https://echo.htmlacademy.ru/" method="post">
+            <div class="modal-field-group-top">
+              <div class="modal-field-group">
+                <label class="modal-text" for="name">Ваше имя:</label>
+                <!--Для отображения ошибки добавить класс error-->
+                <input class="modal-input modal-input-name" type="text" name="name" placeholder="Введите имя" id="name"
+                  required>
+                <!--Для отображения сообщения добавить класс modal-message-shown-->
+                <p class="modal-message">Добавьте имя</p>
+              </div>
+              <div class="modal-field-group">
+                <label class="modal-text" for="email">Ваш e-mail:</label>
+                <input class="modal-input modal-input-email" type="text" name="email" placeholder="Введите почту"
+                  id="email" required>
+                <!--Для отображения ошибки добавить классы modal-error и modal-message-shown-->
+                <p class="modal-message">Забавный у вас адрес</p>
+              </div>
+            </div>
+            <div class="modal-field-group-bottom">
+              <div class="modal-field-group">
+                <label class="modal-text" for="message">Что нужно привезти:</label>
+                <input class="modal-input" type="text" name="message" placeholder="В свободной форме" id="message"
+                  required>
+              </div>
+              <div class="modal-field-group">
+                <span class="modal-text modal-tooltip-wrapper">
+                  <label class="modal-text" for="amount">Количество:</label>
+                  <span class="tooltip">
+                    <button class="tooltip-toggle" type="button" aria-labelledby="tooltip-label">
+                      <span class="visually-hidden">Открыть подсказку</span>
+                    </button>
+                    <span class="tooltip-text" role="tooltip" id="tooltip-label">Постараемся найти, сколько нужно.
+                      Привезём сколько получится по требованиям к&nbsp;провозу багажа.</span>
+                  </span>
+                </span>
+                <div class="modal-field-group amount-group">
+                  <input class="modal-input modal-input-amount" type="text" name="amount" placeholder="1" id="amount">
+                  <button class="modal-amount-button amount-button-minus" type="button">
+                    <span class="visually-hidden">Уменьшить количество на один</span>
+                  </button>
+                  <button class="modal-amount-button amount-button-plus" type="button">
+                    <span class="visually-hidden">Увеличить количество на один</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <button class="button modal-submit-button" type="submit">Отправить</button>
+          </form>
+        </section>
+      </div>
+    </div>
   </body>
 
 </html>
