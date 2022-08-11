@@ -114,7 +114,7 @@ img {
   justify-content: space-between;
   align-items: center;
   margin-bottom: 30px;
-  padding-top: 50px;
+  padding-top: 45px;
 }
 
 .search-form {
@@ -146,7 +146,7 @@ img {
 .search-form-input {
   width: 100%;
   height: 100%;
-  padding: 8px 10px 8px 48px;
+  padding: 8px 10px 8px 46px;
   font-family: inherit;
   font-size: 16px;
   line-height: 20px;
@@ -154,7 +154,7 @@ img {
   background-color: transparent;
   background-image: url("../images/search.svg");
   background-repeat: no-repeat;
-  background-position: 5% 50%;
+  background-position: 4% 50%;
   border: 2px solid #000000;
   border-radius: 50px 0 0 50px;
   cursor: pointer;
@@ -174,7 +174,7 @@ img {
 }
 
 .search-form-button {
-  min-width: 160px;
+  min-width: 158px;
   padding: 8px;
   font-family: inherit;
   font-size: 16px;
@@ -183,7 +183,7 @@ img {
   text-align: center;
   background-color: transparent;
   border: 2px solid #000000;
-  border-left-color: transparent;
+  border-left: none;
   border-radius: 0 50px 50px 0;
   cursor: pointer;
 }
@@ -234,6 +234,7 @@ img {
 
 .user-menu-item:nth-last-child(2) {
   margin-left: auto;
+  margin-right: 20px;
 }
 
 .user-menu-item:last-child {
@@ -243,7 +244,7 @@ img {
 .user-menu-link {
   position: relative;
   display: block;
-  padding: 5px 0 5px 26px;
+  padding: 5px 0 5px 27px;
   text-decoration: none;
   color: #000000;
 }
@@ -269,14 +270,14 @@ img {
 
 .user-menu-link-compare {
   background-image: url("../images/compare.svg");
-  background-position: 0 50%;
+  background-position: 8px 50%;
   background-repeat: no-repeat;
 }
 
 .user-menu-link-cart {
-  padding-left: 44px;
+  padding-left: 43px;
   background-image: url("../images/cart.svg");
-  background-position: 15px 50%;
+  background-position: 15px 49%;
   background-repeat: no-repeat;
 }
 
@@ -685,8 +686,8 @@ img {
 /*Slider*/
 
 .slider {
-  margin-bottom: 70px;
-  margin-top: -150px;
+  margin-bottom: 68px;
+  margin-top: -195px;
   z-index: 1;
 }
 
@@ -723,7 +724,7 @@ img {
 .slider-item::before {
   position: absolute;
   right: 50px;
-  top: 90px;
+  top: 95px;
   font-weight: 700;
   font-size: 180px;
   line-height: 1px;
@@ -748,7 +749,7 @@ img {
 
 .slider-item-text {
   margin: 0;
-  margin-bottom: 50px;
+  margin-bottom: 45px;
 }
 
 .slider-item-button {
@@ -756,7 +757,7 @@ img {
   display: inline-block;
   width: 100%;
   max-width: 220px;
-  margin-bottom: 50px;
+  margin-bottom: 45px;
   padding: 14px 5px;
   text-align: center;
 }
@@ -820,7 +821,7 @@ img {
 .slider-table dd {
   grid-row: 1/2;
   margin: 0;
-  margin-bottom: 15px;
+  margin-bottom: 10px;
   font-size: 36px;
   line-height: 30px;
   color: #000000;
@@ -872,7 +873,7 @@ img {
 
 .slider-pagination {
   position: absolute;
-  top: 365px;
+  top: 358px;
   right: 0;
   display: flex;
   flex-wrap: wrap;
@@ -944,11 +945,11 @@ img {
 
 .category-list {
   display: grid;
-  grid-template-columns: repeat(6, 160px);
+  grid-template-columns: repeat(6, 1fr);
   gap: 40px;
   width: 100%;
   margin: 0;
-  margin-bottom: 70px;
+  margin-bottom: 90px;
   padding: 0;
   list-style-type: none;
 }
@@ -960,6 +961,7 @@ img {
 
 .category-link {
   position: relative;
+  display: block;
   font-family: "Raleway", sans-serif;
   font-size: 18px;
   line-height: 24px;
@@ -1039,19 +1041,29 @@ img {
 }
 
 .services {
-  padding-bottom: 72px;
+  padding-bottom: 65px;
   background-image: linear-gradient(#ffffff 25%,  #f0f0f0 25%);
 }
 
 .services-list {
+  position: relative;
   align-self: center;
   min-width: 280px;
   min-height: 320px;
   margin: 0;
-  padding: 55px 120px 0 0;
-  border-right: 7px solid #000000;
+  padding: 57px 140px 0 0;
   list-style-type: none;
   z-index: 2;
+}
+
+.services-list::after {
+  position: absolute;
+  top: -7px;
+  right: 0;
+  width: 7px;
+  height: 320px;
+  background-color: #000000;
+  content: "";
 }
 
 .services-item {
@@ -1079,9 +1091,15 @@ img {
 .services-button {
   position: relative;
   width: 100%;
-  max-width: 160px;
+  min-width: 160px;
   padding: 10px 5px;
+  text-align: center;
   cursor: pointer;
+}
+
+.services-button-current {
+  padding: 10px 17px;
+  text-align: left;
 }
 
 .services-button::before {
@@ -1154,7 +1172,7 @@ img {
   display: none;
   padding: 65px 246px 72px 116px;
   background-repeat: no-repeat;
-  background-position: 90% 50%;
+  background-position: 91.5% 48%;
 }
 
 .services-details-item-delivery {
@@ -1175,7 +1193,7 @@ img {
   position: relative;
   display: block;
   margin: 70px 0;
-  padding: 40px 80px 40px 130px;
+  padding: 40px 100px 35px 105px;
   font-family: "Raleway", sans-serif;
   font-size: 20px;
   line-height: 23px;
@@ -1237,20 +1255,20 @@ img {
 
 .connect {
   display: grid;
-  grid-template-columns: repeat(2, 532px);
-  column-gap: 96px;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 20px;
 }
 
 .about {
   position: relative;
-  max-width: 500px;
+  min-width: 500px;
   margin-right: 108px;
 }
 
 .about-title {
   margin: 0;
-  margin-bottom: 48px;
-  padding-top: 40px;
+  margin-bottom: 47px;
+  padding-top: 50px;
 }
 
 .about-title::before {
@@ -1270,7 +1288,7 @@ img {
 
 .companies-list {
   margin: 0;
-  margin-bottom: 30px;
+  margin-bottom: 25px;
   padding: 0;
   list-style-type: none;
 }
@@ -1348,13 +1366,13 @@ img {
 
 .contacts {
   position: relative;
-  max-width: 532px;
+  min-width: 500px;
 }
 
 .contacts-title {
   margin: 0;
-  margin-bottom: 48px;
-  padding-top: 40px;
+  margin-bottom: 47px;
+  padding-top: 50px;
 }
 
 .contacts-title::before {
@@ -1382,6 +1400,10 @@ img {
 .contacts-text {
   margin: 0;
   margin-bottom: 30px;
+}
+
+.contacts-last-item {
+  margin-bottom: 25px;
 }
 
 .contacts-address {
@@ -1439,7 +1461,8 @@ img {
 /*Mailing*/
 
 .mailing {
-  padding-top: 64px;
+  margin-top: -5px;
+  padding-top: 65px;
   padding-bottom: 56px;
   background-color: #f0f0f0;
 }
@@ -1447,18 +1470,20 @@ img {
 .mailing-text-wrapper {
   display: flex;
   flex-wrap: wrap;
-  margin-bottom: 144px;
+  margin-bottom: 143px;
 }
 
 .mailing-title {
   max-width: 348px;
   margin: 0;
-  margin-right: 252px;
+  margin-right: 255px;
+  margin-left: 5px;
 }
 
 .mailing-text {
   max-width: 530px;
   margin: 0;
+  margin-top: 10px;
 }
 
 .mailing-form-wrapper {
@@ -1471,7 +1496,7 @@ img {
 }
 
 .mailing-form-input {
-  min-width: 557px;
+  min-width: 560px;
   padding: 12px 16px;
   font: inherit;
   background-color: transparent;
@@ -1507,7 +1532,8 @@ img {
 
 .mailing-button {
   max-width: 253px;
-  padding: 18px 39px;
+  padding: 12px 36px;
+  text-align: center;
   border: 3px solid #c4c4c4;
 }
 
@@ -1549,8 +1575,8 @@ img {
 }
 
 .logo-footer {
-  display: inline-block;
-  margin-bottom: 35px;
+  display: block;
+  margin-bottom: 25px;
 }
 
 .main-footer {
@@ -1585,8 +1611,8 @@ img {
 .footer-address::after {
   content: "";
   position: absolute;
-  bottom: -64px;
-  left: 0;
+  bottom: -70px;
+  left: 2px;
   width: 80px;
   height: 7px;
   background-color: #ffc700;
@@ -1595,10 +1621,10 @@ img {
 .footer-menu {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  column-gap: 35px;
+  column-gap: 30px;
   max-width: 444px;
   margin: 0;
-  margin-bottom: 62px;
+  margin-bottom: 52px;
   padding: 0;
   list-style-type: none;
 }
@@ -1633,7 +1659,8 @@ img {
 
 .footer-phone {
   display: block;
-  margin-bottom: 62px;
+  margin-top: 8px;
+  margin-bottom: 52px;
   max-width: 175px;
   font-size: 16px;
   line-height: 20px;
