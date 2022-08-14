@@ -304,7 +304,7 @@ img {
 .bottom-menu {
   display: flex;
   align-items: center;
-  padding-bottom: 178px;
+  padding-bottom: 132px;
 }
 
 .bottom-menu-catalog {
@@ -687,7 +687,7 @@ img {
 
 .slider {
   margin-bottom: 68px;
-  margin-top: -195px;
+  margin-top: -150px;
   z-index: 1;
 }
 
@@ -1051,7 +1051,7 @@ img {
   min-width: 280px;
   min-height: 320px;
   margin: 0;
-  padding: 57px 140px 0 0;
+  padding: 57px 0 0 0;
   list-style-type: none;
   z-index: 2;
 }
@@ -1059,7 +1059,7 @@ img {
 .services-list::after {
   position: absolute;
   top: -7px;
-  right: 0;
+  right: -7px;
   width: 7px;
   height: 320px;
   background-color: #000000;
@@ -1091,7 +1091,7 @@ img {
 .services-button {
   position: relative;
   width: 100%;
-  min-width: 160px;
+  max-width: 160px;
   padding: 10px 5px;
   text-align: center;
   cursor: pointer;
@@ -1100,6 +1100,10 @@ img {
 .services-button-current {
   padding: 10px 17px;
   text-align: left;
+}
+
+.services-button-current-kredit {
+  padding: 10px 35px;
 }
 
 .services-button::before {
@@ -1170,7 +1174,7 @@ img {
 
 .services-details-item {
   display: none;
-  padding: 65px 246px 72px 116px;
+  padding: 67px 246px 72px 124px;
   background-repeat: no-repeat;
   background-position: 91.5% 48%;
 }
@@ -1181,10 +1185,12 @@ img {
 
 .services-details-item-guarantee {
   background-image: url("../images/guarantee.svg");
+  background-position: 96% 48%;
 }
 
 .services-details-item-credit {
   background-image: url("../images/credit.svg");
+  background-position: 96.3% 48%;
 }
 
 /*Delivery*/
