@@ -241,6 +241,14 @@ img {
   margin-right: 0;
 }
 
+.user-menu-item-enter-catalog {
+  margin-right: 0;
+}
+
+.user-menu-item-exit {
+  margin-right: 20px;
+}
+
 .user-menu-link {
   position: relative;
   display: block;
@@ -308,7 +316,7 @@ img {
 }
 
 .bottom-menu-catalog {
-  padding-bottom: 36px;
+  padding-bottom: 18px;
 }
 
 .main-menu {
@@ -433,19 +441,23 @@ img {
 
 .catalog-list {
   position: absolute;
-  top: 200px;
+  top: 175px;
   left: 0;
   display: none;
   flex-wrap: wrap;
   width: 100%;
   margin: 0;
-  padding: 0 60px 65px 60px;
+  padding: 0 60px 52px 60px;
   background-color: #ffe17f;
   list-style-type: none;
 }
 
 .catalog-item {
-  margin-right: 60px;
+  margin-right: 55px;
+}
+
+.catalog-item:nth-child(2) {
+  margin-right: 75px;
 }
 
 .catalog-item:last-child {
@@ -459,7 +471,7 @@ img {
 }
 
 .catalog-inner-item {
-  margin-bottom: 20px;
+  margin-bottom: 5px;
 }
 
 .catalog-inner-item:last-child {
@@ -512,7 +524,7 @@ img {
 
 .popover-cart {
   position: absolute;
-  top: 36px;
+  top: 42px;
   right: -78px;
   display: none;
   flex-direction: column;
@@ -536,8 +548,8 @@ img {
   height: 0;
   margin-left: auto;
   margin-right: auto;
-  border: 14px solid transparent;
-  border-bottom: 14px solid #000000;
+  border: 7px solid transparent;
+  border-bottom: 7px solid #000000;
   content: "";
 }
 
@@ -554,8 +566,8 @@ img {
 }
 
 .cart-item + .cart-item {
-  padding-top: 24px;
-  margin-top: 24px;
+  padding-top: 20px;
+  margin-top: 20px;
 }
 
 .cart-item + .cart-item::before {
@@ -604,8 +616,8 @@ img {
 .delete-cart-item-button {
   position: relative;
   align-self: flex-start;
-  width: 10px;
-  height: 10px;
+  width: 12px;
+  height: 12px;
   border: none;
   background-color: transparent;
   cursor: pointer;
@@ -616,7 +628,7 @@ img {
   position: absolute;
   top: 4px;
   right: 1px;
-  width: 10px;
+  width: 12px;
   height: 1px;
   background-color: #ffffff;
   transform: rotate(45deg);
@@ -1768,12 +1780,12 @@ img {
 /*Catalog*/
 
 .catalog-header .container {
-  padding: 35px 60px;
+  padding: 35px 60px 30px 60px;
 }
 
 .catalog-title {
   margin: 0;
-  margin-bottom: 16px;
+  margin-bottom: 10px;
 }
 
 .breadcrumbs-list {
@@ -1848,7 +1860,7 @@ img {
 
 .filter-title {
   margin: 0;
-  margin-bottom: 60px;
+  margin-bottom: 58px;
   font-family: "Raleway", sans-serif;
   font-size: 16px;
   line-height: 19px;
@@ -1859,15 +1871,23 @@ img {
 
 .catalog-filter-group {
   margin: 0;
-  margin-bottom: 35px;
+  margin-bottom: 30px;
   padding: 0;
   border: none;
+}
+
+.catalog-filter-group-color {
+  margin-bottom: 19px;
+}
+
+.catalog-filter-group-bluetooth {
+  margin-bottom: 11px;
 }
 
 .catalog-filter-legend {
   position: relative;
   margin-bottom: 20px;
-  padding-top: 15px;
+  padding-top: 16px;
   font-weight: 700;
   font-size: 18px;
   line-height: 20px;
@@ -1897,11 +1917,16 @@ img {
 
 /*Range*/
 
+.range {
+  margin-left: -10px;
+}
+
 .range-scale {
   position: relative;
   width: 100%;
   height: 2px;
   margin-bottom: 15px;
+  margin-top: 7px;
   background-color: #dcdcdc;
 }
 
@@ -2082,9 +2107,10 @@ img {
   position: relative;
   display: inline-block;
   width: 100%;
+  min-width: 220px;
   max-width: 260px;
   margin-bottom: 70px;
-  padding: 14px 5px;
+  padding: 14px 50px;
   text-align: center;
   z-index: 1;
 }
@@ -2367,9 +2393,10 @@ img {
 }
 
 .product-title {
-  max-width: 230px;
+  max-width: 220px;
   margin: 0;
   font-weight: 700;
+  font-size: 18px;
   line-height: 20px;
   letter-spacing: -0.02em;
   color: #000000;
@@ -2386,7 +2413,7 @@ img {
   display: block;
   width: 100%;
   margin-bottom: 44px;
-  padding: 18px 5px;
+  padding: 16px 5px;
   font-size: 16px;
   line-height: 19px;
   text-align: center;
@@ -2418,7 +2445,6 @@ img {
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
-  padding: 20px 25px;
   background-color: #ebebeb;
 }
 
@@ -2501,7 +2527,7 @@ img {
 .modal {
   position: relative;
   margin: auto;
-  padding: 72px 80px;
+  padding: 60px 72px 55px 72px;
   background-color: #ffffff;
 }
 
@@ -2517,10 +2543,10 @@ img {
 
 .modal-close-button {
   position: absolute;
-  top: 80px;
-  right: 80px;
-  width: 26px;
-  height: 26px;
+  top: 73px;
+  right: 63px;
+  width: 35px;
+  height: 35px;
   padding: 0;
   background-color: transparent;
   border: none;
@@ -2532,7 +2558,7 @@ img {
   position: absolute;
   top: 12px;
   right: 0;
-  width: 26px;
+  width: 35px;
   height: 3px;
   background-color: #000000;
   transform: rotate(45deg);
@@ -2635,7 +2661,7 @@ img {
   display: grid;
   grid-template-columns: 1fr 180px;
   column-gap: 40px;
-  margin-bottom: 42px;
+  margin-bottom: 40px;
 }
 
 .amount-group {
@@ -2746,13 +2772,13 @@ img {
 .modal-input-name {
   background-image: url("../images/name-modal.svg");
   background-repeat: no-repeat;
-  background-position: 310px 50%;
+  background-position: 325px 48%;
 }
 
 .modal-input-email {
   background-image: url("../images/email-modal.svg");
   background-repeat: no-repeat;
-  background-position: 310px 50%;
+  background-position: 325px 48%;
 }
 
 /*Tooltip*/
@@ -2765,8 +2791,8 @@ img {
   position: absolute;
   width: 26px;
   height: 26px;
-  margin-top: -35px;
-  margin-left: 120px;
+  margin-top: -38px;
+  margin-left: 125px;
 }
 
 .tooltip-toggle {
@@ -2789,12 +2815,12 @@ img {
 
 .tooltip-text {
   position: absolute;
-  top: 100%;
-  left: -30px;
+  top: 96%;
+  left: -40px;
   display: none;
   width: 200px;
   margin-top: 14px;
-  padding: 19px;
+  padding: 20px;
   font-size: 16px;
   line-height: 20px;
   font-weight: 400;
@@ -2818,9 +2844,9 @@ img {
   right: 0;
   width: 0;
   height: 0;
-  margin-left: 130px;
-  border: 14px solid transparent;
-  border-bottom: 14px solid #000000;
+  margin-left: 145px;
+  border: 7px solid transparent;
+  border-bottom: 7px solid #000000;
   content: "";
 }
 
