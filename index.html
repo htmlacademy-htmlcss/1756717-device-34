@@ -4,6 +4,7 @@
   <head>
     <meta charset="utf-8">
     <title>Главная страница Device</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon.png">
     <link rel="stylesheet" href="styles/styles.css">
   </head>
 
@@ -246,18 +247,23 @@
         <div class="container services-wrapper">
           <h2 class="visually-hidden">Услуги компании</h2>
           <ul class="services-list">
+
             <li class="services-item services-item-current">
               <button class="button services-button services-button-current">Доставка</button>
             </li>
+            <!--Для отображения активной кнопки добавить класс services-item-current-->
             <li class="services-item">
+              <!--Для отображения активной кнопки добавить классы services-button-current-->
               <button class="button services-button">Гарантия</button>
             </li>
+            <!--Для отображения активной кнопки добавить класс services-item-current-->
             <li class="services-item">
+              <!--Для отображения активной кнопки добавить классы services-button-current services-button-current-kredit-->
               <button class="button services-button">Кредит</button>
             </li>
           </ul>
           <ul class="services-details">
-            <li class="services-details-item services-details-item-delivery shown">
+            <li class="services-details-item services-details-item-delivery ">
               <h3 class="services-details-title title">Доставка</h3>
               <p class="services-details-text">Мы с удовольствием доставим ваш товар прямо к&nbsp;вашему&nbsp;подъезду
                 совершенно
@@ -299,14 +305,14 @@
         </section>
         <section class="contacts">
           <h2 class="contacts-title title">Контакты</h2>
-          <p class="contacts-text">Вы можете забрать товар сами, заехав в наш офис. Заодно сможете проверить
+          <p class="contacts-text">Вы можете забрать товар сами, заехав в наш офис.<br>Заодно сможете проверить
             работоспособность покупки.</p>
           <h3 class="contacts-subtitle">Интернет-магазин «Девайс»</h3>
           <p class="contacts-address">Санкт-Петербург, набережная реки Карповки, 5, литера П.</p>
           <a class="contacts-phone contacts-text" href="tel:+78128121212">+7 (812) 812-12-12</a>
           <h3 class="contacts-subtitle">Время работы</h3>
           <p class="contacts-time">пн—пт: с 10:00 до 22:00</p>
-          <p class="contacts-time contacts-text">сб—вс: с 10:00 до 19:00</p>
+          <p class="contacts-time contacts-text contacts-last-item">сб—вс: с 10:00 до 19:00</p>
           <a class="button contacts-button" href="#" aria-disabled="false">Напишите нам</a>
         </section>
       </div>
@@ -314,8 +320,7 @@
         <div class="container">
           <div class="mailing-text-wrapper">
             <h2 class="mailing-title title">Подпишитесь на рассылку</h2>
-            <p class="mailing-text">Еженедельный дайджест с обзорами новинок, длительными&nbsp;тест-драйвами,
-              распаковками, а
+            <p class="mailing-text">Еженедельный дайджест с обзорами новинок,<br>длительными тест-драйвами, распаковками, а
               также акции, спецпредложения и вот это вот всё.</p>
           </div>
           <div class="mailing-form-wrapper">
@@ -433,10 +438,10 @@
               </div>
               <div class="modal-field-group">
                 <label class="modal-text" for="email">Ваш e-mail:</label>
-                <input class="modal-input modal-input-email" type="text" name="email" placeholder="Введите почту"
+                <input class="modal-input modal-input-email" type="text" name="email" placeholder="Введите e-mail"
                   id="email" required>
                 <!--Для отображения ошибки добавить классы modal-error и modal-message-shown-->
-                <p class="modal-message">Забавный у вас адрес</p>
+                <p class="modal-message modal-message-shown">Забавный у вас адрес</p>
               </div>
             </div>
             <div class="modal-field-group-bottom">
