@@ -818,6 +818,7 @@ img {
 
 .slider-table-wrapper {
   display: grid;
+  max-width: 160px;
   margin-right: 20px;
 }
 
@@ -887,7 +888,7 @@ img {
 
 .slider-pagination {
   position: absolute;
-  top: 358px;
+  bottom: 170px;
   right: 0;
   display: flex;
   flex-wrap: wrap;
@@ -2021,6 +2022,10 @@ img {
   opacity: 0.6;
 }
 
+.control-input:hover ~ .control-label {
+  opacity: 0.6;
+}
+
 .control-input:focus + .control-mark::after {
   position: absolute;
   top: 50%;
@@ -2035,6 +2040,10 @@ img {
 .control-input:active + .control-mark {
   opacity: 0.3;
   outline: none;
+}
+
+.control-input:active ~ .control-label {
+  opacity: 0.3;
 }
 
 .control-input[type="checkbox"]:checked + .control-mark::before {
@@ -2080,6 +2089,12 @@ img {
   font-size: 16px;
   line-height: 19px;
   color: #000000;
+  cursor: pointer;
+}
+
+.control-input:disabled ~ .control-label {
+  opacity: 0.1;
+  pointer-events: none;
 }
 
 .control-input[type="radio"] ~ .control-label {
@@ -2788,6 +2803,7 @@ img {
   background-position: 50% 50%;
   border: none;
   border-radius: 50%;
+  cursor: pointer;
 }
 
 .tooltip-toggle:focus {
